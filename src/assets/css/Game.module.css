@@ -1,0 +1,42 @@
+.board{
+    position: relative;
+    display: block;
+    width: 21rem;
+    height: 21rem;
+    font-size: 0;
+}
+.board > div:nth-child(1){
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-bottom: 0.5px solid #ccc;
+    background-color: #ccc;
+}
+.grid{
+    position: relative;
+    display: inline-block;
+    width: calc(100%/3);
+    height: 0;
+    padding-bottom: calc(100%/3);
+    border: 1px solid #ccc;
+    font-size: 4rem;
+    background-color: #fff;
+}
+.grid:hover{
+    cursor: pointer;
+    border: 1px solid #f00;
+}
+
+.grid span{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.player,.winner{
+    font-size: 1rem;
+}
+
+button{
+    font-size: 1rem;
+}

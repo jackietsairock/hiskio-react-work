@@ -1,0 +1,5 @@
+.filter_ul{
+    max-height: 30rem;
+    overflow: auto;
+    border: 1px solid #aaa;
+}
