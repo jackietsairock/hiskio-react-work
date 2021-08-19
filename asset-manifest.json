@@ -1,15 +1,15 @@
 {
-  "main.css": "/hiskio-react-work/static/css/main.2c472182.chunk.css",
-  "main.js": "/hiskio-react-work/static/js/main.bd99ec56.chunk.js",
-  "main.js.map": "/hiskio-react-work/static/js/main.bd99ec56.chunk.js.map",
-  "runtime~main.js": "/hiskio-react-work/static/js/runtime~main.4f7bc0b9.js",
-  "runtime~main.js.map": "/hiskio-react-work/static/js/runtime~main.4f7bc0b9.js.map",
-  "static/css/2.9423e50e.chunk.css": "/hiskio-react-work/static/css/2.9423e50e.chunk.css",
-  "static/js/2.6b6f314d.chunk.js": "/hiskio-react-work/static/js/2.6b6f314d.chunk.js",
-  "static/js/2.6b6f314d.chunk.js.map": "/hiskio-react-work/static/js/2.6b6f314d.chunk.js.map",
-  "index.html": "/hiskio-react-work/index.html",
-  "precache-manifest.723d47a10080aa072101a1379ab6cce7.js": "/hiskio-react-work/precache-manifest.723d47a10080aa072101a1379ab6cce7.js",
-  "service-worker.js": "/hiskio-react-work/service-worker.js",
-  "static/css/2.9423e50e.chunk.css.map": "/hiskio-react-work/static/css/2.9423e50e.chunk.css.map",
-  "static/css/main.2c472182.chunk.css.map": "/hiskio-react-work/static/css/main.2c472182.chunk.css.map"
+  "main.css": "/static/css/main.1e9a6cab.chunk.css",
+  "main.js": "/static/js/main.086c50fe.chunk.js",
+  "main.js.map": "/static/js/main.086c50fe.chunk.js.map",
+  "static/css/1.49586b79.chunk.css": "/static/css/1.49586b79.chunk.css",
+  "static/js/1.6b9fab63.chunk.js": "/static/js/1.6b9fab63.chunk.js",
+  "static/js/1.6b9fab63.chunk.js.map": "/static/js/1.6b9fab63.chunk.js.map",
+  "runtime~main.js": "/static/js/runtime~main.229c360f.js",
+  "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
+  "static/css/main.1e9a6cab.chunk.css.map": "/static/css/main.1e9a6cab.chunk.css.map",
+  "static/css/1.49586b79.chunk.css.map": "/static/css/1.49586b79.chunk.css.map",
+  "index.html": "/index.html",
+  "precache-manifest.3a68c90e7a58d2a42598d9da8fa0a25e.js": "/precache-manifest.3a68c90e7a58d2a42598d9da8fa0a25e.js",
+  "service-worker.js": "/service-worker.js"
 }
