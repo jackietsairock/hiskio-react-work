@@ -12,9 +12,9 @@
     "uuid": "^8.3.2"
   },
   "scripts": {
-    "start": "node server.js",
+    "start": "react-scripts start",
     "build": "react-scripts build",
-    "server": "nodemon server.js",
+    "server": "node server.js",
     "eject": "react-scripts eject",
     "predeploy": "yarn build",
     "deploy": "gh-pages -d build",
