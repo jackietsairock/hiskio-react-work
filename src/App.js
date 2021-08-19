@@ -1,15 +1,20 @@
-import React, { Component } from 'react';
-import { Row, Container, Col } from 'react-bootstrap';
-import './assets/css/App.css';
+import React, { Component } from "react";
+import { Row, Container, Col } from "react-bootstrap";
+import "./assets/css/App.css";
 
-import Game from './Game';
-import Header from './loginModal/Header';
+import Game from "./Game";
+import Header from "./loginModal/Header";
+import ModalBox from "./loginModal/ModalBox";
+import TodoList from "./hooksTodoList/TodoList";
 
+import { Provider } from "./loginModal/context/context";
 
 class App extends Component {
   state = {
-    filter: '',
-    lessons: [],
+    filter: "", //列表過濾使用
+    lessons: [], //列表過濾使用
+    modal: null, //context API跳窗使用
+    login: false //context API跳窗使用
   };
   componentDidMount() {
     this.fetchLessons();
@@ -28,7 +33,14 @@ class App extends Component {
     }, 300); // debounce
   };
   render() {
+    //列表過濾使用
     const { filter, lessons } = this.state;
+
+    //context API跳窗使用
+    const contextValue = {
+      state: this.state,
+      setState: this.setState.bind(this)
+    };
     return (
       <Container fluid={true}>
         <Row>
@@ -36,10 +48,7 @@ class App extends Component {
             <Row>
               <Col xs="12" sm="12" md="6" lg="6" className="mb-3">
                 <h4>列表過濾:</h4>
-                <input
-                  value={filter}
-                  onChange={this.onChangeFilter}
-                />
+                <input value={filter} onChange={this.onChangeFilter} />
                 <ul className="filter_ul">
                   {lessons.map(lesson => (
                     <li key={lesson.id}>{lesson.title}</li>
@@ -56,10 +65,14 @@ class App extends Component {
             <Row>
               <Col xs="12" sm="12" md="6" lg="6" className="mb-3">
                 <h4>用 context API 實作跳窗:</h4>
-                <Header />
+                <Provider value={contextValue}>
+                  <Header />
+                  <ModalBox />
+                </Provider>
               </Col>
               <Col xs="12" sm="12" md="6" lg="6" className="mb-3">
                 <h4>用 hooks 實作 TodoList:</h4>
+                <TodoList />
               </Col>
             </Row>
           </Col>

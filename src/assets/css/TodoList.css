@@ -1,0 +1,4 @@
+.todolist_li:hover{
+    cursor: pointer;
+    color: brown;
+}
