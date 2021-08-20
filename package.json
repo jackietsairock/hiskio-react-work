@@ -29,8 +29,8 @@
     "not ie <= 11",
     "not op_mini all"
   ],
-  "proxy": "https://master.d1lck5r53u3cjl.amplifyapp.com:3001",
-  "homepage": "https://master.d1lck5r53u3cjl.amplifyapp.com/",
+  "proxy": "https://localhost:3001",
+  "homepage": "https://35.80.31.133/",
   "devDependencies": {
     "gh-pages": "^3.2.3",
     "connect-memcached": "*",
